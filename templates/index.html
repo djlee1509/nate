@@ -1,0 +1,43 @@
+<!-- <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+        <h2>Words Counter</h2>
+        <form method="POST" action="/">
+            Enter URL here: <br>
+            <input type="text" name="url" required><br>
+            <input type="submit" value="Submit">
+        </form>
+        
+        {% if url %}
+        <h2>Results:-</h2>
+        {% for key in dictionary: %}
+        <p>{{key}} : {{dictionary[key]}},</p>
+        {% endfor %}
+        {% endif %}
+    </body>
+    </html> -->
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Nate Challenge: Dongjin Lee</title>
+    </head>
+    <body>
+        <h2>word counter</h2>
+        <form method="POST" action="/">
+            Enter URL here: <input type="url" name="url" required><br>
+            <input type="submit" value="Submit">
+        </form>
+        <h3>Results:-</h3>
+        {% for key in dictionary: %}
+        <p>{{ key }}: {{ dictionary[key]}},</p>
+        {% endfor %}
+    </body>
+    </html>

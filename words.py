@@ -20,8 +20,10 @@ words = [word.lower() for word in words]
 
 dictionary = dict()
 
-for word in words:
-  word = re.sub(r'[^a-z]', '', word)
+regex = r"([^a-z'+])"
+
+for word in words[:100]:
+  word = re.sub(regex, "", word)
   counter = words.count(word)
   dictionary[word] = counter
 
