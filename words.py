@@ -18,7 +18,13 @@ words = page.text.replace('\n', ' ').split()
 
 words = [word.lower() for word in words]
 
+dictionary = dict()
+
 for word in words:
-  word = re.sub(r'[^a-z]', ' ', word)
+  word = re.sub(r'[^a-z]', '', word)
   counter = words.count(word)
-  print('{} : {}'.format(word, counter))
+  dictionary[word] = counter
+
+for k in dictionary:
+  print("{}: {},".format(k, dictionary[k]))
+
