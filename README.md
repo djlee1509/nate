@@ -11,3 +11,5 @@ In this challenge, I have created the independent Backend applicatioon, "words.p
 ```
 for word in words[:100]:
 ```
+
+And the both frontend (templates -> index.html) and backend (app.py) code can be found on this repository.
